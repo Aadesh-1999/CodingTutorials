@@ -12,7 +12,7 @@
     width:100%;
     background-color: rgb(128, 213, 247);
     color:rgb(255, 255, 255);
-    font-size: xx-large;
+    /* font-size: xx-large; */
     text-decoration: none;
 }
 NavLink{
