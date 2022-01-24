@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from "react-router-dom";
+
 export const CoursesHeader = (props) => {
     return (
-        <div className='sticky-top'>
-            <div className="courseHeader mb-3">
+        <><div className='sticky-top'>
+            <div className="courseHeader">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
                     <div className="container-fluid">
                         <NavLink className="navbar-brand titleHeader" to="/courses">{props.name}</NavLink>
@@ -17,16 +18,16 @@ export const CoursesHeader = (props) => {
                                     <NavLink className="nav-link px-5" aria-current="page" to="/courses/java/intro">Java</NavLink>
                                 </li>
                                 <li className="nav-item px-5">
-                                    <NavLink className="nav-link" to="/courses/python">Python</NavLink>
+                                    <NavLink className="nav-link" to="/courses/python/intro">Python</NavLink>
                                 </li>
                                 <li className="nav-item px-5">
-                                    <NavLink className="nav-link" to="/courses/javascript">JavaScript</NavLink>
+                                    <NavLink className="nav-link" to="/courses/javascript/intro">JavaScript</NavLink>
                                 </li>
                                 <li className="nav-item px-5">
-                                    <NavLink className="nav-link" to="/courses/cplusplus">C++</NavLink>
+                                    <NavLink className="nav-link" to="/courses/cplusplus/intro">C++</NavLink>
                                 </li>
                                 <li className="nav-item px-5">
-                                    <NavLink className="nav-link" to="/courses/clang">C</NavLink>
+                                    <NavLink className="nav-link" to="/courses/c/intro">C</NavLink>
                                 </li>
                             </ul>
                             {props.searchBar ?
@@ -38,7 +39,11 @@ export const CoursesHeader = (props) => {
                     </div>
                 </nav>
             </div>
-        </div>);
+        </div>
+        {/* <div className="container">
+            <Outlet/>
+        </div> */}
+        </>);
 };
 CoursesHeader.defaultProps = {
     name: "Courses",
