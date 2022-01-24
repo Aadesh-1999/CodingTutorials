@@ -14,7 +14,7 @@ export const CoursesHeader = (props) => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent1">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <NavLink className="nav-link px-5" aria-current="page" to="/courses/java">Java</NavLink>
+                                    <NavLink className="nav-link px-5" aria-current="page" to="/courses/java/intro">Java</NavLink>
                                 </li>
                                 <li className="nav-item px-5">
                                     <NavLink className="nav-link" to="/courses/python">Python</NavLink>

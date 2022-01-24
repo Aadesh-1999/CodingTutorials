@@ -1,0 +1,23 @@
+.w3-sidebar{display:"none"}
+.siderow{
+    width: 100%;display: inline;
+}
+
+#mySidebar>ul>li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.w3-button{
+    width:100%;
+    background-color: rgb(128, 213, 247);
+    color:rgb(255, 255, 255);
+    font-size: xx-large;
+    text-decoration: none;
+}
+NavLink{
+    text-decoration: none;
+}
+#mySidebar{
+    height:300vh;
+}
