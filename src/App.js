@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { Header } from './Components/Header';
+import ScrollToTop from './Functions/ScrollToTop';
 import {
   BrowserRouter,
   Routes,
@@ -27,6 +28,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+        <ScrollToTop>
         <Routes>
         <Route path='/' exact element={<><Courses /></>} />
           <Route path='/courses' exact element={<><Courses /></>} />
@@ -57,6 +59,7 @@ function App() {
           
           <Route path='*' exact element={<><h1>404 Page Not Found</h1></>} />
         </Routes>
+        </ScrollToTop>
         <Footer />
       </BrowserRouter>
     </div>
