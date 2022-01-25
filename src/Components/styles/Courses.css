@@ -18,7 +18,7 @@
 .content{
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
-    text-shadow: 2px black;
+    text-shadow: 1px 1px #000000;;
 }
 
 .card{

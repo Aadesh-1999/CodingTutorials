@@ -5,15 +5,15 @@ import './styles/Courses.css';
 export const Courses = () => {
   return (
     <div className='coursesElement'>
-      <div className='px-5 py-4 text-start content'>
+      <div className='px-5 p-4 text-start content'>
         <h3>Welcome to Coding Tutes</h3>
         <h5>Happy Learning!!</h5>
         <hr />
         <h5>You Can Follow Me on <a href="https://www.twitter.com/aadesh_codes">Twitter</a> </h5>
         {/* <Route path='/courses/:id' exact element={<JavaIntro/>} /> */}
       </div>
-      <div className="row m-5 d-flex justify-content-center">
-        <div className="col-12 m-5">
+      <div className="row mb-5 d-flex justify-content-center">
+        <div className="col-12 mt-4 mb-4">
           <h2 id="projectby" className='display-3'>Offered Courses</h2>
         </div>
         <div className="col-12 col-sm-6 col-md">
