@@ -16,18 +16,19 @@
 }
 
 .content{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
+    text-shadow: 2px black;
 }
 
 .card{
     width: 18rem;
-    margin: 5% auto;
+    margin: 2% auto;
     cursor: pointer;
 }
 
 img{
-    height: 200px;
+    height: 250px;
     width: 20px;
     padding: 2%;
 }

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export const Header = (props) => {
   return (
-    <div className="">
+    <div className="sticky-top">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div className="container-fluid">
           <NavLink className="navbar-brand titleHeader" to="/courses">{props.name}</NavLink>
