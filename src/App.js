@@ -7,7 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import { Footer } from './Components/Footer';
-import { CoursesHeader } from './Components/CoursesHeader';
+// import { CoursesHeader } from './Components/CoursesHeader';
 import { About } from './Pages/About';
 import { Contacts } from './Pages/Contacts';
 import { Courses } from './Components/Courses';
@@ -28,28 +28,28 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-        <Route path='/' exact element={<><CoursesHeader /><Courses /></>} />
-          <Route path='/courses' exact element={<><CoursesHeader /><Courses /></>} />
+        <Route path='/' exact element={<><Courses /></>} />
+          <Route path='/courses' exact element={<><Courses /></>} />
           <Route path='/about' exact element={<About />} />
           <Route path='/contacts' exact element={<Contacts />} />
           <Route path='/courses' >
-            <Route path='java' element={<><CoursesHeader /><Sidebar name="java"/></>}>
+            <Route path='java' element={<><Sidebar name="java"/></>}>
               <Route path='intro' element={<JavaIntro />} />
               <Route path='syntax' element={<JavaSyntax />} />
             </Route>
-            <Route path='python' element={<><CoursesHeader /><Sidebar name="python"/></>}>
+            <Route path='python' element={<><Sidebar name="python"/></>}>
               <Route path='intro' element={<PythonIntro />} />
               <Route path='syntax' element={<PythonSyntax />} />
             </Route>
-            <Route path='javascript' element={<><CoursesHeader /><Sidebar name="javascript"/></>}>
+            <Route path='javascript' element={<><Sidebar name="javascript"/></>}>
               <Route path='intro' element={<JavascriptIntro />} />
               <Route path='syntax' element={<JavascriptSyntax />} />
             </Route>
-            <Route path='cplusplus' element={<><CoursesHeader /><Sidebar name="cplusplus"/></>}>
+            <Route path='cplusplus' element={<><Sidebar name="cplusplus"/></>}>
               <Route path='intro' element={<CplusplusIntro />} />
               <Route path='syntax' element={<CplusplusSyntax />} />
             </Route>
-            <Route path='c' element={<><CoursesHeader /><Sidebar name="c"/></>}>
+            <Route path='c' element={<><Sidebar name="c"/></>}>
               <Route path='intro' element={<CIntro />} />
               <Route path='syntax' element={<CSyntax/> } />
             </Route>
